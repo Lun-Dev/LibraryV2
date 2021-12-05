@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic" rel="stylesheet" type='text/css'>
+        <title>Library</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="center">
+                <div class="overlay"></div>
+                <button class="fab">+</button>
+            </div>
+        <header class="header">Your Library</header>
+        <div class="popup" id="pop">
+            <div class="close-btn">&times;</div>
+            <div class="container2">
+                <form id="form1">
+                    <div class="form-element">
+                        <h2>New Book</h2>
+                    </div>
+                    <div class="form-element" id="input-area">
+                        <label for="title2">Title:</label>
+                        <input type="text" class="title2" data-cate="title" placeholder="Title" required>
+                        <label for="author2">Author:</label>
+                        <input type="text" class="author2" data-cate="author" placeholder="Author" required>
+                        <label for="pages2">Pages:</label>
+                        <input type="number" class="pages2" data-cate="pages" placeholder="Pages" min="0" required>
+                    </div>
+                    <div class="form-element" id="check">
+                        <h3>Have you read it?</h3>
+                        <input type="checkbox" id="checkbox">
+                    </div>
+                    <div class="form-element">
+                        <button type="submit" class="reader">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="book-shelf"></div>
+        <script src="index.js"></script>
+    </body>
+</html>
